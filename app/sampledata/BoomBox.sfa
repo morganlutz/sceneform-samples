@@ -1,0 +1,109 @@
+{
+  materials: [
+    {
+      name: 'BoomBox_Mat',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'BoomBox_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'BoomBox_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'BoomBox_occlusionRoughnessMetallic',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          emissive: 'BoomBox_emissive',
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/BoomBox.gltf',
+    name: 'BoomBox',
+    recenter: 'root',
+    scale: 10,
+  },
+  samplers: [
+    {
+      file: 'sampledata/BoomBox_emissive.png',
+      name: 'BoomBox_emissive',
+      pipeline_name: 'BoomBox_emissive.png',
+    },
+    {
+      file: 'sampledata/BoomBox_normal.png',
+      name: 'BoomBox_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'BoomBox_normal.png',
+    },
+    {
+      file: 'sampledata/BoomBox_occlusionRoughnessMetallic.png',
+      name: 'BoomBox_occlusionRoughnessMetallic',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'BoomBox_occlusionRoughnessMetallic.png',
+    },
+    {
+      file: 'sampledata/BoomBox_baseColor.png',
+      name: 'BoomBox_baseColor',
+      pipeline_name: 'BoomBox_baseColor.png',
+    },
+  ],
+  version: '0.54:2',
+}
